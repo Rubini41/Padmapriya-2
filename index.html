@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            text-align:center;
+            width:400px;
+        }
+
+        h2{
+            color:#003366;
+        }
+
+        input[type=text]{
+            width:90%;
+            padding:12px;
+            font-size:16px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            margin-top:15px;
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 30px;
+            font-size:16px;
+            background:#007BFF;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Search</h2>
+
+    <form action="https://formspree.io/f/mjgqlzgr" method="POST">
+
+        <input
+            type="text"
+            name="Search"
+            placeholder="Enter anything here..."
+            required>
+
+        <br>
+
+        <button type="submit">Search</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
